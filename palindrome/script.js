@@ -18,10 +18,10 @@ function checkPalindrome() {
   const result = isPalindrome(inputString);
   const resultDiv = document.getElementById('result');
   if (result) {
-    resultDiv.textContent = `ჩემი Picasso როგორ პალინდრომობსო`;
+    resultDiv.textContent = `This is Palindrome`;
     resultDiv.style.color = 'green';
   } else {
-    resultDiv.innerHTML = `ჩემი Picasso როგორ <u><em><strong>არ</strong></em></u> პალინდრომობსო`;
+    resultDiv.innerHTML = `This is <u>not</u> Palindrome`;
     resultDiv.style.color = 'red';
   }
 }
