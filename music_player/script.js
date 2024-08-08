@@ -1,4 +1,4 @@
-// Getting ready HTML elements for usage in project
+// Pulling HTML elements
 const playlistSongs = document.getElementById("playlist-songs");
 const playButton = document.getElementById("play");
 const pauseButton = document.getElementById("pause");
@@ -6,6 +6,7 @@ const nextButton = document.getElementById("next");
 const previousButton = document.getElementById("previous");
 const shuffleButton = document.getElementById("shuffle");
 
+// Array of objects containing all the original songs with their respective properties
 const allSongs = [
   {
     id: 0,
@@ -79,7 +80,18 @@ const allSongs = [
   },
 ];
 
+// Creating HTML audio element
 const audio = new Audio();
 
-let userData = {};
+// Tracks which song is playing and the time of it
+let userData = {
+  songs: [...allSongs],
+  currentSong: null,
+  songCurrentTime: 0
+};
+
+// Arrow/Anonymous function to display songs in UI
+const renderSongs = (array) => {
+
+};
 
